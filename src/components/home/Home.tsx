@@ -6,8 +6,10 @@ import { PersonalInformationForm } from "../personalInformationForm/PersonalInfo
 import { WebPresence } from "../webPresence/WebPresence";
 import { Experience } from "../experience/Experience";
 import { useForm, SubmitHandler } from "react-hook-form";
-
+import useAnimationOnScroll from "../../hooks/useAnimationOnScroll";
 const Home: React.FC = () => {
+  useAnimationOnScroll();
+
   const steps = [
     "Welcome Page",
     "Personal Information",
@@ -65,7 +67,7 @@ const Home: React.FC = () => {
   return (
     <>
       <div className="home-container">
-        <Container>
+        <div>
           {renderCurrentStep()}
           <div className="buttons">
             <Button
@@ -93,7 +95,7 @@ const Home: React.FC = () => {
               Submit Form
             </Button> */}
           </div>
-        </Container>
+        </div>
 
         <div className="stepper-section">
           <StepIndicator

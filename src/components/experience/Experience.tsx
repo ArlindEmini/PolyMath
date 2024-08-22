@@ -1,13 +1,14 @@
 import { Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import "./Experience.scss";
-
+import useAnimationOnScroll from "../../hooks/useAnimationOnScroll";
 interface ExperienceInterface {
   register: any;
   watch: any;
 }
 
 export const Experience = ({ register, watch }: ExperienceInterface) => {
+  useAnimationOnScroll();
   return (
     <div>
       <h2 className="form-title">Experience</h2>

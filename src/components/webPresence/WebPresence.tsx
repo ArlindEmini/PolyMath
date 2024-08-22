@@ -1,11 +1,12 @@
 import { Form } from "react-bootstrap";
 // import "./WebPresence.scss";
-
+import useAnimationOnScroll from "../../hooks/useAnimationOnScroll";
 interface WebPresenceInterface {
   register: any;
 }
 
 export const WebPresence = ({ register }: WebPresenceInterface) => {
+  useAnimationOnScroll();
   return (
     <div>
       <h2 className="form-title">Web Presence</h2>

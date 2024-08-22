@@ -1,6 +1,6 @@
 import { Form, Container, Row } from "react-bootstrap";
 import "./PersonalInformationForm.scss";
-
+import useAnimationOnScroll from "../../hooks/useAnimationOnScroll";
 interface PersonalInformationFormInterface {
   register: any;
 }
@@ -8,6 +8,7 @@ interface PersonalInformationFormInterface {
 export const PersonalInformationForm = ({
   register,
 }: PersonalInformationFormInterface) => {
+  useAnimationOnScroll();
   return (
     <div>
       <h2 className="form-title">Personal Information</h2>
