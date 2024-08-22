@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form, Button } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
 import "./Home.scss";
 import StepIndicator from "../stepIndicator/StepIndicator";
 import { PersonalInformationForm } from "../personalInformationForm/PersonalInformationForm";
@@ -65,7 +65,7 @@ const Home: React.FC = () => {
   return (
     <>
       <div className="home-container">
-        <div>
+        <Container>
           {renderCurrentStep()}
           <div className="buttons">
             <Button
@@ -93,7 +93,7 @@ const Home: React.FC = () => {
               Submit Form
             </Button> */}
           </div>
-        </div>
+        </Container>
 
         <div className="stepper-section">
           <StepIndicator
