@@ -15,9 +15,9 @@ const StepIndicator: React.FC<StepIndicatorProps> = ({
   const [resetTextColor, setResetTextColor] = useState<boolean>(false);
 
   const handleStepChange = (step: number) => {
-    setResetTextColor(true); // Set flag to reset text color
-    onStepChange(step); // Trigger the parent handler
-    setTimeout(() => setResetTextColor(false), 0); // Reset the flag immediately after update
+    setResetTextColor(true);
+    onStepChange(step);
+    setTimeout(() => setResetTextColor(false), 0);
   };
 
   return (
