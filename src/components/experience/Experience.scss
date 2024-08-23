@@ -1,56 +1,48 @@
-.home-container {
-  background-color: #f3f7ff;
-  padding: 4rem;
+.information-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
 
   .form-title {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
     color: #0d2461;
     text-align: left;
-    padding-left: 2rem;
   }
 
   p {
     color: #68789c;
     text-align: left;
-    padding-left: 2rem;
+    padding-bottom: 1rem;
   }
 
-  .personal-information-container {
-    background-color: #f3f7ff;
-    padding: 2rem;
-    gap: 80px;
+  .experience-information-container {
+    background-color: #fff;
     display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-top: 4px solid #3abb69;
+    text-align: left;
 
-    .form-section {
-      background-color: #ffffff;
-      width: 800px;
-      padding: 2rem;
-      border-radius: 4px;
-      text-align: left;
-      border-top: 4px solid #3abb69;
+    .green-bullet {
+      width: 8px;
+      height: 8px;
+      background-color: #3abb69;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 8px;
+    }
+    .red-asterix {
+      color: red;
+    }
 
-      .green-bullet {
-        width: 8px;
-        height: 8px;
-        background-color: #3abb69;
-        border-radius: 50%;
-        display: inline-block;
-        margin-right: 8px;
-      }
-      .red-asterix {
-        color: red;
-      }
-
-      .form-label {
-        color: #172c67;
-        font-weight: bold;
-      }
-      .form-text {
-        color: #0f2662 !important;
-        display: block;
-        padding-bottom: 10px !important;
-      }
+    .form-label {
+      color: #172c67;
+      font-weight: bold;
+    }
+    .form-text {
+      color: #0f2662 !important;
+      display: block;
+      padding-bottom: 10px !important;
     }
   }
 }
